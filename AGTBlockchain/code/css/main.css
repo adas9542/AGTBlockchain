@@ -1,0 +1,66 @@
+
+
+body {
+    text-align: center; /*text-align: :center*/
+    display: flex;
+    flex-direction: column;
+    background: #313E50;;
+    padding: 2em;
+    font-family: "Montserrat";
+    justify-content: center;
+
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+label {
+    display:block;
+    margin-bottom:10px;'
+}
+input {
+    padding:10px;
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+button:hover{
+  letter-spacing: 0.8em;
+  background-color: #B22222;
+}
+
+button {
+  color:white;
+  height: 4em;
+  width: 20%;
+  padding: 1.5em auto;
+  margin: 1em auto;
+  background-color: #B22222;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+
+}
+
+
+h1{
+  text-align: center;
+  color: #B22222;
+}
+
+h2{
+  text-align: center;
+  color: #B22222;
+}
+
+body{
+  background-color: #4682B4;
+}
+#instructor {
+    padding:1em;
+    background-color:#fff;
+    margin: 1em 0;
+}
