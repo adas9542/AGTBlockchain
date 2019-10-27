@@ -7,3 +7,18 @@
 3) Go to settings and change port number to 8545 to run on localhost
 
 4) Go to index and check your first tested balance
+
+
+Precautions:
+-make sure metamask runs on port 7545 NOT  on ropsten
+-retrieve the mnemonic from ganache and use it on metamask when creating a new account
+-every time you restart ganache you need to use truffle compile followed by truffle migrate --reset(to deploy your contracts) on ballot-contract directory
+-then go to the ballot-app directory and do npm install if you don't have it already and then run npm start to have your localhost:3000 run your codeon the local web
+
+note: 
+-if there are issues with metamask, then uninstall and reinstall
+-changing the gas value might give you a lot of errors
+
+to do: 
+-obtain the address value for the handlevote function such that user 1 is not fined for any transaction he didn't perform(app.js)
+-add buttons to the bindevents for your buttons to run
