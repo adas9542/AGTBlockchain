@@ -11,7 +11,7 @@
 
 Precautions
 
-1) make sure metamask runs on port 7545 NOT  on ropsten
+1)make sure metamask runs on port 7545 NOT  on ropsten
 
 2)retrieve the mnemonic from ganache and use it on metamask when creating a new account
 
