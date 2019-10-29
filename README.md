@@ -23,6 +23,8 @@
 
 4) then go to the ballot-app directory and do npm install if you don't have it already and then run npm start to have your localhost:3000    run your codeon the local web
 
+5) Make sure the name of the solidity file is the same all throughout the json files, app,js, and such
+
 ### Note
 
 1) if there are issues with metamask, then uninstall and reinstall
@@ -31,6 +33,6 @@
 
 ### To Do
 
-1) obtain the address value for the handlevote function such that user 1 is not fined for any transaction he didn't perform(app.js)
+1) add buttons to the bindevents for your buttons to run
 
-2) add buttons to the bindevents for your buttons to run
+2) work on buttons on the front-end
