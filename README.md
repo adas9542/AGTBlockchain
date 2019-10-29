@@ -1,5 +1,9 @@
 # AGTBlockchain
 
+
+
+
+
 1) Run and install ganache
 
 2) Quickstart or start new workspace 
@@ -9,7 +13,7 @@
 4) Go to index and check your first tested balance
 
 
-Precautions
+###Precautions
 
 1)make sure metamask runs on port 7545 NOT  on ropsten
 
@@ -19,13 +23,13 @@ Precautions
 
 4)then go to the ballot-app directory and do npm install if you don't have it already and then run npm start to have your localhost:3000 run your codeon the local web
 
-note 
+###Note 
 
 1)if there are issues with metamask, then uninstall and reinstall
 
 2)changing the gas value might give you a lot of errors
 
-to do 
+###To Do 
 
 1)obtain the address value for the handlevote function such that user 1 is not fined for any transaction he didn't perform(app.js)
 
