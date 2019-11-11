@@ -64,7 +64,7 @@ App = {
       App.handleRegister(account);
       });
     });
-    $(document).on('click', '#checkvotes', App.handleCheckvotes());
+    $(document).on('click', '#checkvotes', App.handleCheckvotes);
   },
 
   populateAddress : function(){
@@ -144,12 +144,12 @@ App = {
     var voteInstance;
     web3.eth.getAccounts(function (error, accounts) {
       var account = accounts[0];
-      Apps.contracts.vote.deployed().then(function(instance) {
+      App.contracts.vote.deployed().then(function(instance) {
         voteInstance = instance;
         return voteInstance.checkVotes();
       }).then(function(res) {
         console.log(res);
-        alert(res + "votes left");
+        alert(res + " votes left");
       }).catch(function(err){
       console.log(err.message);
       })
@@ -172,6 +172,7 @@ App = {
     })
   }
 };
+
 
 $(function() {
   $(window).load(function() {
