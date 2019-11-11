@@ -64,8 +64,11 @@ App = {
       App.handleRegister(account);
       });
     });
-    $(document).on('click', '#checkvotes', App.handleCheckvotes);
+    $(document).on('click', '#checkvotes', App.handleCheckvotes); //App.handleCheckVotes() would intantiate it and then diplay the alert a soon as the website is loaded because thats what bindevents does, unless otherwise specified.
+    $(document).on('click', '#buyvotes', App.handlebuyVotes);
+
   },
+
 
   populateAddress : function(){
     new Web3(new Web3.providers.HttpProvider(App.url)).eth.getAccounts((err, accounts) => {
@@ -147,13 +150,25 @@ App = {
       App.contracts.vote.deployed().then(function(instance) {
         voteInstance = instance;
         return voteInstance.checkVotes();
-      }).then(function(res) {
+      }).then(function(res) { //takes the value from the voteInstance.checkVotes()
         console.log(res);
-        alert(res + " votes left");
+        alert(account + ' has ' + res + " votes left");
       }).catch(function(err){
       console.log(err.message);
       })
     })
+  },
+
+
+  handlebuyVotes : function(){
+  console.log("To buy more votes");
+  var voteInstance;
+
+  App.contracts.vote.deployed().then(function(instance) {
+    voteInstance = instance;
+    return voteInstance.buyVotes();
+  });
+
   },
 
   handleWinner : function() {
@@ -172,6 +187,8 @@ App = {
     })
   }
 };
+
+
 
 
 $(function() {
