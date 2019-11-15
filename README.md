@@ -32,8 +32,14 @@
 
 2) changing the gas value might give you a lot of errors
 
-### To Do
+### Running the program
 
-1) add buttons to the bindevents for your buttons to run
+1) Start ganache
 
-2) work on buttons on the front-end
+2) Go to ballot-contract in terminal and type "truffle compile" and then "truffle migrate --reset"
+
+3) Go to cd../ballot-app and then type "npm start"
+
+4) Go to localhost:3000 on web browser and use metamask to register Account 1(who is chairperson) and then you may vote, checkvotes, and buyvotes
+
+5) To vote from another account switch accounts through metamask. 
